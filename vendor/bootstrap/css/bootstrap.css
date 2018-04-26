@@ -3012,8 +3012,8 @@ fieldset:disabled a.btn {
 }
 
 .btn-outline-dark {
-  color: #343a40;
-  background-color: transparent;
+  color: #0c130f;
+  background-color: #00000100;
   background-image: none;
   border-color: #343a40;
 }
