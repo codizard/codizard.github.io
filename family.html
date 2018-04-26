@@ -82,7 +82,7 @@
          <h1 class="text-secondary text-uppercase mb-0">Family Role in Employment</h1>
       </div>
         <div class="container">
-        <p class="lead">Families provide vital support for individuals with disabilities seeking, obtaining and retaining employment. This page provides resources for families and other members of their support networks. Employment First recognizes that families are often the most consistent support in an individual’s life and these resources are here to guide you.</p>
+        <p>Families provide vital support for individuals with disabilities seeking, obtaining and retaining employment. This page provides resources for families and other members of their support networks. Employment First recognizes that families are often the most consistent support in an individual’s life and these resources are here to guide you.</p>
   		</div>
         
         <hr class="star-dark mb-5">
@@ -93,7 +93,7 @@
               <div class="container">
         <p class="lead"></p>
   		</div>
-              <p class="lead">These resources are tailored for families supporting a jobseeker between the ages of 14 and 26.</p>
+              <p>These resources are tailored for families supporting a jobseeker between the ages of 14 and 26.</p>
               <a class="btn btn-primary" href="youth.html">
                 <i class="fa fa"></i>
                 Learn More</a>
@@ -120,7 +120,7 @@
                <div class="container">
         <p class="lead"></p>
   		</div>
-              <p class="lead">These resources are tailored for families supporting a jobseeker 27 or older.</p>
+              <p >These resources are tailored for families supporting a jobseeker 27 or older.</p>
               <a class="btn btn-primary" href="#">
                 <i class="fa fa"></i>
                 Learn More</a>
@@ -138,10 +138,10 @@
         <hr class="star-light mb-5">
         <div class="row">
           <div class="col-lg-4 ml-auto">
-            <p class="lead" style="font-size:20px">Employment First encompasses the belief that community-based, integrated employment should be the primary day activity for working age youth and adults with disabilities. It supports an overarching goal that eligible persons with disabilities will have access to integrated work settings most appropriate for them, including the supports necessary to help them succeed in the workplace. Employment First does not mean employment only and does not deny individual choice, but is intended to increase employment opportunities for individuals with disabilities.</p>
+            <p >Employment First encompasses the belief that community-based, integrated employment should be the primary day activity for working age youth and adults with disabilities. It supports an overarching goal that eligible persons with disabilities will have access to integrated work settings most appropriate for them, including the supports necessary to help them succeed in the workplace. Employment First does not mean employment only and does not deny individual choice, but is intended to increase employment opportunities for individuals with disabilities.</p>
           </div>
           <div class="col-lg-4 mr-auto">
-            <p class="lead" style="font-size:20px">In 2014, only 22% of people in the DDD system receiving day services were in integrated employment. In 2014, only 14% of DDD funding spent on day and employment services went to integrated employment. People who work have a higher quality of life, greater community participation, and are more likely to make their own choices in life. New regulations from the Centers for Medicare and Medicaid, Department of Justice and the Department of Labor are requiring states to prioritize integrated services for everyone who has a disability.</p>
+            <p >In 2014, only 22% of people in the DDD system receiving day services were in integrated employment. In 2014, only 14% of DDD funding spent on day and employment services went to integrated employment. People who work have a higher quality of life, greater community participation, and are more likely to make their own choices in life. New regulations from the Centers for Medicare and Medicaid, Department of Justice and the Department of Labor are requiring states to prioritize integrated services for everyone who has a disability.</p>
           </div>
         </div>
         <div class="text-center mt-4">
@@ -387,6 +387,9 @@
       function myFunction(multiplier) {
         if (document.body.style.fontSize == "") {
             document.body.style.fontSize = "1.0em";
+        }
+        if((parseFloat(document.body.style.fontSize) + (multiplier * 0.2)) > 2 || (parseFloat(document.body.style.fontSize) + (multiplier * 0.2)) < 0.8){
+          return;
         }
         document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.2) + "em";
       }
