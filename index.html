@@ -375,6 +375,9 @@
         if (document.body.style.fontSize == "") {
             document.body.style.fontSize = "1.0em";
         }
+        if((parseFloat(document.body.style.fontSize) + (multiplier * 0.2)) > 2 || (parseFloat(document.body.style.fontSize) + (multiplier * 0.2)) < 0.8){
+          return;
+        }
         document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.2) + "em";
       }
     </script>
