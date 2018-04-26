@@ -31,25 +31,28 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg bg-secondary fixed-top text-uppercase" id="mainNav">
       <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top">AZ Employment First</a>
-        <button class="navbar-toggler navbar-toggler-right text-uppercase bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+
+
+        <a class="navbar-brand js-scroll-trigger" href="#page-top"><img src="img/logo.png" alt="" style="width:150px;height:100px;">
+        </a>
+        <button class="navbar-toggler navbar-toggler-right text-uppercase bg-primary  rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           Menu
           <i class="fa fa-bars"></i>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item mx-0 mx-lg-1">
-              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#portfolio">Welcome</a>
+              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#welcome">Home</a>
             </li>
             <li class="nav-item mx-0 mx-lg-1">
               <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#portfolio">Resources</a>
             </li>
 
             <li class="nav-item mx-0 mx-lg-1">
-              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#portfolio">Testimonial</a>
+              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#testimonial">Testimonial</a>
             </li>
             <li class="nav-item mx-0 mx-lg-1">
-              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">FAQ</a>
+              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">About US</a>
             </li>
             <li class="nav-item mx-0 mx-lg-1">
               <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#contact">Contact</a>
@@ -58,13 +61,26 @@
         </div>
       </div>
     </nav>
+ <section id = "welcome" class="bg-primary">
+    <button id="inc" style="height:40px;width:40px;display:inline-block;position:fixed; right:50; top:450px; background-color:#DC143C;" onclick="myFunction(1)">+
+    </button>
+    <button id="dec" style="height:40px;width:40px;display:inline-block;position:fixed; right:50; top:480px; background-color:#DC143C" onclick="myFunction(-1)">-
+    </button>
 
-	<div class="container">
-    <h1 class="m-0 text-center pa-3">Family Role in Employment</h1>
-  </div>
+
+    
+
+    </section>
+	
 
     <!-- Portfolio Grid Section -->
-    <section class="portfolio" id="portfolio">
+    <section class="portfolio bg-primary" id="portfolio">
+    <div class="container">
+    <h2 class="text-center text-uppercase text-secondary mb-0">Family Role in Employment</h2>
+    <div class="container">
+        <p class="lead"></p>
+  		</div>
+  </div>
       <div class="container">
         <h2 class="text-center text-uppercase text-secondary mb-0">Resources – Youth and Young Adults</h2>
         <div class="container">
@@ -230,9 +246,9 @@
     </section>
 
    <!-- About Section -->
-    <section class="bg-primary text-white mb-0" id="about">
+    <section class="bg-primary text-black mb-0" id="about">
       <div class="container">
-        <h2 class="text-center text-uppercase text-white">About</h2>
+        <h2 class="text-center text-uppercase text-black">About</h2>
         <hr class="star-light mb-5">
         <div class="row">
           <div class="col-lg-4 ml-auto">
@@ -243,15 +259,15 @@
           </div>
         </div>
         <div class="text-center mt-4">
-          <a class="btn btn-xl btn-outline-light" href="pdfs/cap_brochure.pdf">
+          <a class="btn btn-xl btn-outline-dark" href="pdfs/cap_brochure.pdf">
             <i class="fa fa-download mr-2"></i>
             CAP BROCHURE
           </a>
-          <a class="btn btn-xl btn-outline-light" href="#">
+          <a class="btn btn-xl btn-outline-dark" href="#">
             <i class="fa fa-download mr-2"></i>
             PDF 2
           </a>
-          <a class="btn btn-xl btn-outline-light" href="#">
+          <a class="btn btn-xl btn-outline-dark" href="#">
             <i class="fa fa-download mr-2"></i>
             PDF 3
           </a>
@@ -260,7 +276,7 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact">
+    <section id="contact" class="bg-primary">
       <div class="container">
         <h2 class="text-center text-uppercase text-secondary mb-0">Contact Me</h2>
         <hr class="star-dark mb-5">
@@ -481,7 +497,15 @@
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
+    <script type="text/javascript">
+      function myFunction(multiplier) {
+        if (document.body.style.fontSize == "") {
+            document.body.style.fontSize = "1.0em";
+        }
+        document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.2) + "em";
+      }
+    </script>
+  
     <!-- Plugin JavaScript -->
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
     <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
@@ -492,7 +516,40 @@
 
     <!-- Custom scripts for this template -->
     <script src="js/freelancer.min.js"></script>
+  <script>
+    //Ref:
+    //https://responsivevoice.org/text-to-speech-sdk/text-to-speech-highlighted-selected-text/
+    function getSelectionText() {
+        var text = "";
+        if (window.getSelection) {
+            text = window.getSelection().toString();
+            // for Internet Explorer 8 and below. For Blogger, you should use &amp;&amp; instead of &&.
+        } else if (document.selection && document.selection.type != "Control") {
+            text = document.selection.createRange().text;
+        }
+        return text;
+    }
+    $(document).ready(function (){ // when the document has completed loading
+        $(document).mouseup(function (e){ // attach the mouseup event for all div and pre tags
+            setTimeout(function() { // When clicking on a highlighted area, the value stays highlighted until after the mouseup event, and would therefore stil be captured by getSelection. This micro-timeout solves the issue.
+                responsiveVoice.cancel(); // stop anything currently being spoken
+                responsiveVoice.speak(getSelectionText()); //speak the text as returned by getSelectionText
+            }, 1);
+        });
+    });
+    //Ref:https://responsivevoice.org/text-to-speech-sdk/text-to-speech-menus/
+    $('a').mouseenter(function() { // Attach this function to all mouseenter events for 'a' tags
+        responsiveVoice.cancel(); // Cancel anything else that may currently be speaking
+        responsiveVoice.speak($(this).text()); // Speak the text contents of all nodes within the current 'a' tag
+    });
 
+  $('p').mouseenter(function() { // Attach this function to all mouseenter events for 'a' tags
+        responsiveVoice.cancel(); // Cancel anything else that may currently be speaking
+        responsiveVoice.speak($(this).text()); // Speak the text contents of all nodes within the current 'a' tag
+    });
+
+
+  </script>
   </body>
 
 </html>
