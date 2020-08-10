@@ -1,6 +1,6 @@
 <?php
-
-if(!$_POST) exit;
+$message = "Inside php";
+echo "<script type='text/javascript'>alert('$message');</script>";if(!$_POST) exit;
 
 // Email address verification, do not edit.
 function isEmail($email) {
@@ -45,7 +45,7 @@ if(get_magic_quotes_gpc()) {
 // Example $address = "joe.doe@yourdomain.com";
 
 //$address = "example@themeforest.net";
-$address = "example@yourdomain.com";
+$address = "shashaank.sivakumar@gmail.com";
 
 
 // Configuration option.
@@ -71,6 +71,7 @@ $headers .= "Reply-To: $email" . PHP_EOL;
 $headers .= "MIME-Version: 1.0" . PHP_EOL;
 $headers .= "Content-type: text/plain; charset=utf-8" . PHP_EOL;
 $headers .= "Content-Transfer-Encoding: quoted-printable" . PHP_EOL;
+$headers .= "Access-Control-Allow-Origin: *" . PHP_EOL;
 
 if(mail($address, $e_subject, $msg, $headers)) {
 
