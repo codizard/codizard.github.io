@@ -814,7 +814,7 @@ a.bttn-new:focus {
     font-size: 42px;
     font-weight: 300;
     line-height: 62px;
-    margin: 0 0 25px;
+    margin: 0 0 10px;
     padding: 0;
     text-transform: none;
 }
@@ -2828,8 +2828,6 @@ body.seo_version .footer-links a:hover{
 	position: relative;
 	padding: 0px 15px;
 }
-
-
 
 
 
