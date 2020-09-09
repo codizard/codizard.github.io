@@ -24,6 +24,10 @@
    <!-- Custom CSS -->
    <link rel="stylesheet" href="css/custom.css">
    <script src="js/modernizr.custom.79639.js"></script>
+   <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
    <!--[if lt IE 9]>
    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
@@ -47,7 +51,9 @@
          <div class="container">
          <div class="row">
             <div class="col-sm-3 m-auto d-none d-lg-block">
-               <img class="logo" src="images/GoWorld_logo.png" alt="">
+	            <a href="./index.html">
+	               <img class="logo" src="images/GoWorld_logo.png" alt="">
+	           </a>
             </div>
             <div class="col-md-12 col-lg-9">
                <nav class="navbar navbar-expand-md navbar-light bg-light ">
@@ -101,7 +107,7 @@
             </div>
          </div>
       </header>
-      
+
       <!-- End header -->
       <div id="slider" class="sl-slider-wrapper">
          <div class="sl-slider">
@@ -121,7 +127,7 @@
                   <h2>Our priorities</h2>
                   <blockquote>
                      <p>Your job, ROI and stay back options </p>
-                     <a href="#" class="bttn-new">Let's talk</a>
+                     <a href="./contact.html" class="bttn-new">Let's talk</a>
                   </blockquote>
                </div>
             </div>
@@ -147,7 +153,7 @@
             </div>
             <div class="sl-slide" data-orientation="vertical" data-slice1-rotation="-5" data-slice2-rotation="25" data-slice1-scale="2" data-slice2-scale="1">
                <div class="sl-slide-inner">
-                  <div class="bg-img bg-img-4"></div>
+                  <div class="bg-img bg-img-5"></div>
                   <h2>Transition plan</h2>
                   <blockquote>
                      <p>Special Learning Differences</p>
@@ -221,23 +227,22 @@
                   <div class="text-center">
                      <div class="service-widget">
                         <div class="post-media wow fadeIn">
-                           <img src="images/Car.png" alt="" class="img-fluid img-rounded">
-                        </div>
-                        <h3>Career</h3>
-                        <p>Get career-ready and gain a significant edge in competive job markets. </p>
-                        <button onclick="document.location='./Career-Services.html'"> Read more </button>
-                     </div>
-                     <!-- end service -->
-                  </div>
-                  <!-- end col -->
-                  <div class="text-center">
-                     <div class="service-widget">
-                        <div class="post-media wow fadeIn">
                            <img src="images/LD.png" alt="" class="img-fluid img-rounded">
                         </div>
                         <h3>Learning disabilities</h3>
                         <p>Transition plan and pathway programs for students with learning disabilities at undergrad and graduate level</p>
                         <button onclick="document.location='./LD.html'"> Read more </button>
+                     </div>
+                     <!-- end service -->
+                  </div>
+                  <div class="text-center">
+                     <div class="service-widget">
+                        <div class="post-media wow fadeIn">
+                           <img src="images/Car.png" alt="" class="img-fluid img-rounded">
+                        </div>
+                        <h3>Career</h3>
+                        <p>Get career-ready and gain a significant edge in competive job markets. </p>
+                        <button onclick="document.location='./Career-Services.html'"> Read more </button>
                      </div>
                      <!-- end service -->
                   </div>
@@ -359,22 +364,17 @@
       </div>
       <!-- end section -->
       <div id="support" class="section db">
-         <div class="container">
-            <div class="section-title text-center">
-               <h3>Resources we love</h3>
-            </div>
-            <!-- end title -->
-            <div class="row">
-               <div id="logo-carousel" class="owl-carousel">
-                  <div> <img src="images/42courses.png" alt=""> </div>
-                  <div> <img src="images/Upkey.png" alt=""> </div>
-                  <div> <img src="images/Neksa.png" alt=""> </div>
-                  <div> <img src="images/CarrerER.png" alt=""> </div>
-                  <div> <img src="images/td4ed2020.png" alt=""></div>
-               </div>
-            </div>
-            <!-- end row -->
-         </div>
+         <h2>Our  Partners</h2>
+		   <section class="customer-logos resource-slider">
+		      <div class="resource-slide"><img src="https://image.freepik.com/free-vector/luxury-letter-e-logo-design_1017-8903.jpg"></div>
+		      <div class="resource-slide"><img src="https://image.freepik.com/free-vector/3d-box-logo_1103-876.jpg"></div>
+		      <div class="resource-slide"><img src="https://image.freepik.com/free-vector/blue-tech-logo_1103-822.jpg"></div>
+		      <div class="resource-slide"><img src="https://image.freepik.com/free-vector/colors-curl-logo-template_23-2147536125.jpg"></div>
+		      <div class="resource-slide"><img src="https://image.freepik.com/free-vector/abstract-cross-logo_23-2147536124.jpg"></div>
+		      <div class="resource-slide"><img src="https://image.freepik.com/free-vector/football-logo-background_1195-244.jpg"></div>
+		      <div class="resource-slide"><img src="https://image.freepik.com/free-vector/background-of-spots-halftone_1035-3847.jpg"></div>
+		      <div class="resource-slide"><img src="https://image.freepik.com/free-vector/retro-label-on-rustic-background_82147503374.jpg"></div>
+		   </section>
          <!-- end container -->
       </div>
       <!-- end section -->
@@ -393,36 +393,14 @@
                   <!-- end clearfix -->
                </div>
                <!-- end col -->
-               <div class="col-lg-2 col-md-6 col-xs-12">
-                  <div class="widget clearfix">
-                     <div class="widget-title">
-                        <h3>Menu</h3>
-                     </div>
-                     <ul class="footer-links">
-                        <li><a href="#">Study Abroad</a></li>
-                        <li><a href="#">Study Destinations</a></li>
-                        <li><a href="#">Intern Abroad</a></li>
-                        <li><a href="#">Services offering</a></li>
-                        <li><a href="#">University Tie-ups</a></li>
-                        <li><a href="#">Career</a></li>
-                        <li><a href="#">Learning disabilities</a></li>
-                        <li><a href="#">For institutions</a></li>
-                        <li><a href="#">Contact us</a></li>
-                     </ul>
-                     <!-- end links -->
-                  </div>
-                  <!-- end clearfix -->
-               </div>
-               <!-- end col -->
                <div class="col-lg-3 col-md-6 col-xs-12">
                   <div class="widget clearfix">
                      <div class="widget-title">
                         <h3>Social</h3>
                      </div>
                      <ul class="footer-links social-md">
-                        <li><a class="fb btn-a" title="Facebook" data-tippy-animation="scale" href="#"><i class="fa fa-facebook"></i></a></li>
-                        <li><a class="tw btn-a" title="Twitter" data-tippy-animation="scale" href="#"><i class="fa fa-twitter"></i> </a></li>
-                        <li><a class="tw btn-a" title="Instagram" data-tippy-animation="scale" href="#"><i class="fa fa-instagram"></i> </a></li>
+                        <li><a class="fb btn-a" title="Facebook" data-tippy-animation="scale" href="https://www.facebook.com/goworld.co"><i class="fa fa-facebook"></i></a></li>
+                        <li><a class="tw btn-a" title="Instagram" data-tippy-animation="scale" href="https://www.instagram.com/goworld.co"><i class="fa fa-instagram"></i> </a></li>
                         <li><a class="tw btn-a" title="LinkedIn" data-tippy-animation="scale" href="#"><i class="fa fa-linkedin"></i> </a></li>
                      </ul>
                      <!-- end links -->
