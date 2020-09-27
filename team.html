@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+   <!-- Basic -->
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <!-- Mobile Metas -->
+   <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+   <!-- Site Metas -->
+   <title>Our team</title>
+   <meta name="keywords" content="">
+   <meta name="description" content="">
+   <meta name="author" content="">
+   <!-- Site Icons -->
+   <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+   <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+
+   <!-- Bootstrap CSS -->
+   <link rel="stylesheet" href="css/bootstrap.min.css">
+   <!-- Site CSS -->
+   <link rel="stylesheet" href="style.css">
+   <!-- ALL VERSION CSS -->
+   <link rel="stylesheet" href="css/versions.css">
+   <!-- Responsive CSS -->
+   <link rel="stylesheet" href="css/responsive.css">
+   <!-- Custom CSS -->
+   <link rel="stylesheet" href="css/custom.css">
+   <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> -->
+
+   <script src="js/modernizr.custom.79639.js"></script>
+   <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+   <!--[if lt IE 9]>
+   <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+   <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+   <![endif]-->
+   <style>
+   .column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+/* Display the columns below each other instead of side by side on small screens */
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+/* Add some shadows to create a card effect */
+.card {
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Some left and right padding inside the container */
+.container {
+  padding: 0 16px;
+}
+
+/* Clear floats */
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+.ontop {
+            z-index: 999;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            display: none;
+            position: absolute;           
+            background-color: #cccccc;
+            color: #aaaaaa;
+            /*opacity: .4;*/
+            filter: alpha(opacity = 50);
+         }
+
+         #popDiv {
+  margin: auto;
+  width: 50%;
+  border: 3px solid green;
+  padding: 10px; /* negative half of height above */
+
+}
+
+.span4 img {
+    margin-right: 10px;
+}
+.span4 .img-left {
+    float: left;
+}
+.span4 .img-right {
+    float: right;
+}
+
+</style>
+   </head>
+   <body class="seo_version">
+      <!-- LOADER -->
+      <div id="preloader">
+         <div class="loader-wrapper">
+            <div class="loader-new">
+               <div class="ball"></div>
+               <div class="ball"></div>
+               <div class="ball"></div>
+            </div>
+            <div class="text">LOADING...</div>
+         </div>
+      </div>
+      <!-- END LOADER -->
+      <!-- Start header -->
+      <header class="bg-light">
+         <div class="container">
+         <div class="row">
+            <div class="col-sm-3 m-auto d-none d-lg-block">
+                <a href="./index.html">
+                   <img class="logo" src="images/logo.png" alt="">
+               </a>
+           </div>
+            <div class="col-md-12 col-lg-9">
+               <nav class="navbar navbar-expand-md navbar-light bg-light ">
+                  <ul class="navbar-nav">
+                     <li class="nav-item p-3">
+                        <h4>
+                           <i class="fa fa-phone"></i> <span><strong><span class="ringo-phone">+91 63808 48682</span></strong>
+                        </h4>
+                     </li>
+                     <li class="nav-item p-3">
+                        <h4><i class="fas fa-envelope-open-text"></i> <span><strong>go@goworld.co</strong></span></h4>
+                     </li>
+                     <li class="nav-item p-3">
+                        <h4><strong><a href="#" class="jsBillChat">Our Blog </a></strong></h4>
+                     </li>
+                    <li class="nav-item p-3">
+                        <h4><strong><a href="team.html" class="jsBillChat">Our Team </a></strong></h4>
+                     </li>
+                  </ul>
+               </nav>
+               <hr>
+               <nav id="default2" class="navbar navbar-expand-md navbar-light bg-light default2">
+                  <div id="nav-size" class="container-fuil">
+                     <div class="row">
+
+                        <div class="collapse navbar-collapse" id="navbars-seo">
+                           <ul class="navbar-nav ml-auto">
+                           <li class="nav-item"><a class="nav-link" href="Study-Abroad.html">Study Abroad</a></li>
+                           <li class="nav-item dropdown">
+                              <a class="nav-link dropdown-toggle" href="#" id="dropdown-study" data-toggle="dropdown">Study Destination </a>
+                              <div class="dropdown-menu" aria-labelledby="dropdown-a">
+                                 <a class="dropdown-item" href="Australia.html">Australia</a>
+                                 <a class="dropdown-item" href="Canada.html">Canada</a>
+                                 <a class="dropdown-item" href="USA.html">USA</a>
+                                 <a class="dropdown-item" href="UK.html">UK</a>
+                                 <a class="dropdown-item" href="NZ.html">New Zealand</a>
+                              </div>
+                           </li>
+                           <li class="nav-item dropdown">
+                              <a class="nav-link dropdown-toggle" href="#" id="dropdown-a" data-toggle="dropdown">Intern Abroad </a>
+                              <div class="dropdown-menu" aria-labelledby="dropdown-a">
+                                 <a class="dropdown-item" href="Rome.html">Rome</a>
+                              </div>
+                           </li>
+                           <li class="nav-item"><a class="nav-link" href="learning-disabilities.html">Learning Disabilities</a></li>
+                           <li class="nav-item"><a class="nav-link" href="career.html">Career Services</a></li>
+                           <li class="nav-item"><a class="nav-link" href="institutions.html">For institutions</a></li>
+                        </div>
+                     </div>
+                  </div>
+               </nav>
+            </div>
+         </div>
+      </header>
+     <div id="popDiv" class="ontop">
+<div class="container">
+   <div class="all-page-title" style="background-image:url(images/pattern-4.png);">
+      <!--Page -->
+        <div class="page-info">
+            <div class="container">
+
+            </div>
+        </div>
+        <!--End Page-->
+        <div class="container">
+            <h1>Why study abroad?</h1>
+         <p>
+                Globalization is changing the way the world works, and employers are increasingly looking for workers who have cross-cultural competence and cutting-edge technical skills.Study abroad is a life-changing experience for many students, opening their eyes to different ways of life and promoting understanding and tolerance. By looking at research on the more directly quantifiable aspects of study abroad impact, studies show students who study abroad have better grades, experience less attrition, and graduate from college at higher rates than students who do not study abroad.Also Employers value study abroad experiences in the workplace.
+            </p>
+        </div>
+    </div><!-- end section -->
+    
+</div>
+      </div> 
+
+<div id="services" class="section lb">
+<div class="container">
+   <div class="section-title text-center">
+      <h3>Meet our team</h3>
+   </div>
+
+
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="images/Team/Annapoorna_Jayaram.jpg" alt="Annapoorna" style="width:100%">
+      <div class="container">
+        <h2>Annapoorna Jayaram</h2>
+        <p class="title">Advisor</p>
+        <!-- <p><button class="button" onClick="pop('popDiv')">Read more</button></p> -->
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="images/Team/Bhuvana Ram.jpg" alt="Bhuvana" style="width:100%">
+      <div class="container">
+        <h2>Bhuvana Ram</h2>
+        <p class="title">Student Assessor</p>
+        <!-- <p><button class="button">Read more</button></p> -->
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="images/Team/Gayathri Vinay.jpg" alt="Gayathri" style="width:100%">
+      <div class="container">
+        <h2>Gayathri Vinay</h2>
+        <p class="title">Student Counsellor</p>
+        <!-- <p><button class="button">Read more</button></p> -->
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="images/Team/Mallika Ganapathy.jpg" alt="Mallika" style="width:100%">
+      <div class="container">
+        <h2>Mallika Ganapathy</h2>
+        <p class="title">Advisor</p>
+        <!-- <p><button class="button">Read more</button></p> -->
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="images/Team/Remya Satish.jpg" alt="Remya" style="width:100%">
+      <div class="container">
+        <h2>Remya Satish</h2>
+        <p class="title">Student success mentor</p>
+        <!-- <p><button class="button">Read more</button></p> -->
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="images/Team/SivaKumar Dandapani.jpg" alt="Sivakumar" style="width:100%">
+      <div class="container">
+        <h2>Sivakumar Dandapani</h2>
+        <p class="title">Operations</p>
+        <!-- <p><button class="button">Read more</button></p> -->
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="images/Team/Srivatsava Rajagopal.jpg" alt="Jane" style="width:100%">
+      <div class="container">
+        <h2>Srivatsava Rajagopal</h2>
+        <p class="title">Country lead</p>
+        <!-- <p><button class="button">Read more</button></p> -->
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+<div id="support" class="section db">
+         <!-- h2>Our  Partners</h2>
+         <section class="customer-logos resource-slider">
+            <div class="resource-slide"><img src="https://image.freepik.com/free-vector/luxury-letter-e-logo-design_1017-8903.jpg"></div>
+            <div class="resource-slide"><img src="https://image.freepik.com/free-vector/3d-box-logo_1103-876.jpg"></div>
+            <div class="resource-slide"><img src="https://image.freepik.com/free-vector/blue-tech-logo_1103-822.jpg"></div>
+            <div class="resource-slide"><img src="https://image.freepik.com/free-vector/colors-curl-logo-template_23-2147536125.jpg"></div>
+            <div class="resource-slide"><img src="https://image.freepik.com/free-vector/abstract-cross-logo_23-2147536124.jpg"></div>
+            <div class="resource-slide"><img src="https://image.freepik.com/free-vector/football-logo-background_1195-244.jpg"></div>
+            <div class="slide"><img src="https://image.freepik.com/free-vector/background-of-spots-halftone_1035-3847.jpg"></div>
+            <div class="slide"><img src="https://image.freepik.com/free-vector/retro-label-on-rustic-background_82147503374.jpg"></div>
+         </section> -->
+         <!-- end container -->
+      </div>
+      <footer class="footer">
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-3 col-md-3 col-xs-12">
+                  <div class="widget clearfix">
+                     <div class="widget-title">
+                        <img class="logo" src="images/logo.png" alt="">
+                     </div>
+                     <p> 171/4, `Himang Hansa' Murugu Nagar,<br/> 5th street,Srinivasa Nagar Extension, <br/>
+                        Velachery, <br/> Chennai, Tamil Nadu 600042 
+                     </p>
+                  </div>
+                  <!-- end clearfix -->
+               </div>
+               <!-- end col -->
+               <div class="col-lg-3 col-md-6 col-xs-12">
+                  <div class="widget clearfix">
+                     <div class="widget-title">
+                        <h3>Social</h3>
+                     </div>
+                     <ul class="footer-links social-md">
+                        <li><a class="fb btn-a" title="Facebook" data-tippy-animation="scale" href="https://www.facebook.com/goworld.co"><i class="fa fa-facebook"></i></a></li>
+                        <li><a class="tw btn-a" title="Instagram" data-tippy-animation="scale" href="https://www.instagram.com/goworld.co"><i class="fa fa-instagram"></i> </a></li>
+                        <li><a class="tw btn-a" title="LinkedIn" data-tippy-animation="scale" href="#"><i class="fa fa-linkedin"></i> </a></li>
+                     </ul>
+                     <!-- end links -->
+                  </div>
+                  <!-- end clearfix -->
+               </div>
+               <!-- end col -->
+               <div class="col-lg-3 col-md-6 col-xs-12">
+                  <div class="widget clearfix">
+                     <div class="widget-title">
+                        <h3>Contact Details</h3>
+                     </div>
+                     <ul class="footer-links">
+                        <li><a href="mailto:#">go@goworld.co</a></li>
+                        <li>+91 63808 48682</li>
+                        <li>+91 98400 31517</li>
+                        <li>+91 87788 96134</li>
+                     </ul>
+                     <!-- end links -->
+                  </div>
+                  <!-- end clearfix -->
+               </div>
+               <!-- end col -->
+            </div>
+            <!-- end row -->
+         </div>
+         <!-- end container -->
+      </footer>
+      <!-- end footer -->
+      <div class="copyrights">
+         <div class="container">
+            <div class="footer-distributed">
+               <div class="footer-left">
+                  <p class="footer-company-name">All Rights Reserved. &copy; 2018 <a href="#">GreatSEO</a> Design By : <a href="https://html.design/">html design</a></p>
+               </div>
+            </div>
+         </div>
+         <!-- end container -->
+      </div>
+      <!-- end copyrights -->
+      <a href="#" id="scroll-to-top" class="dmtop global-radius"><i class="fa fa-angle-up"></i></a>
+      <!-- ALL JS FILES -->
+      <script src="js/all.js"></script>
+      <!-- ALL PLUGINS -->
+      <script src="js/tippy.all.min.js"></script>
+      <script src="js/custom.js"></script>
+      <script src="js/jquery.ba-cond.min.js"></script>
+      <script src="js/jquery.slitslider.js"></script>
+      <script type="text/javascript">
+         function pop(div) {
+            document.getElementById(div).style.display = 'block';
+         }
+         function hide(div) {
+            document.getElementById(div).style.display = 'none';
+         }
+         //To detect escape button
+         document.onkeydown = function(evt) {
+            evt = evt || window.event;
+            if (evt.keyCode == 27) {
+               hide('popDiv');
+            }
+         };
+      </script>
+      <script type="text/javascript">	
+         $(document).ready(function(){
+          var $default2 = $("#default2");
+          $(window).scroll(function(){
+            if ( $(this).scrollTop() > 100 && $default2.hasClass("navbar-light bg-light default2") ){
+              $default2.removeClass("navbar-light bg-light default2").addClass("navbar-dark bg-dark fixed-top");
+            } else if($(this).scrollTop() <= 100 && $default2.hasClass("navbar-dark bg-dark fixed-top")) {
+              $default2.removeClass("navbar-dark bg-dark fixed-top").addClass("navbar-light bg-light default2");
+            }
+          });//scroll
+         });
+         
+         $(document).ready(function(){
+          var $default3 = $("#nav-size");  
+          $(window).scroll(function(){
+            if ( $(this).scrollTop() > 100 && $default3.hasClass("container-fuil") ){
+              $default3.removeClass("container-fuil").addClass("container");
+            } else if($(this).scrollTop() <= 100 && $default3.hasClass("container")) {
+              $default3.removeClass("container").addClass("container-fuil");
+            }
+          });//scroll
+         });
+         
+            jQuery(window).scroll(function(){
+              if(jQuery(window).scrollTop()>100){          
+                  jQuery('#logo-small').css('display','block');
+               }else{         
+                  jQuery('#logo-small').css('display','none');
+               }
+         });
+         jQuery(window).scroll(function(){
+              if(jQuery(window).scrollTop()>100){
+                jQuery('#nav-size').css('display','block');
+                  jQuery('#nav-size-small').css('display','none');
+               }else{
+                 jQuery('#nav-size').css('display','block');
+                  jQuery('#nav-size-small').css('display','none');
+               }
+         });   
+      </script>  
+      <script type="text/javascript">	
+         $(function() {
+         
+         	var Page = (function() {
+         		var $navArrows = $( '#nav-arrows' ),
+         		 $nav = $( '#nav-dots > span' ),
+         			slitslider = $( '#slider' ).slitslider( {
+         				onBeforeChange : function( slide, pos ) {
+         
+         					$nav.removeClass( 'nav-dot-current' );
+         					$nav.eq( pos ).addClass( 'nav-dot-current' );
+         
+         				}
+         			} ),
+         
+         			init = function() {
+         
+         				initEvents();
+         				
+         			},
+         			initEvents = function() {
+         				// add navigation events
+         				$navArrows.children( ':last' ).on( 'click', function() {
+         
+         					slitslider.next();
+         					return false;
+         
+         				} );
+         
+         				$navArrows.children( ':first' ).on( 'click', function() {
+         					
+         					slitslider.previous();
+         					return false;
+         
+         				} );
+         
+         				$nav.each( function( i ) {
+         				
+         					$( this ).on( 'click', function( event ) {
+         						
+         						var $dot = $( this );
+         						
+         						if( !slitslider.isActive() ) {
+         
+         							$nav.removeClass( 'nav-dot-current' );
+         							$dot.addClass( 'nav-dot-current' );
+         						
+         						}
+         						
+         						slitslider.jump( i + 1 );
+         						return false;
+         					
+         					} );
+         					
+         				} );
+         
+         			};
+         
+         			return { init : init };
+         
+         	})();
+         
+         	Page.init();
+         
+         });
+      </script>
+      <script>
+         tippy('.btn-a')
+      </script>
+   </body>
+</html>

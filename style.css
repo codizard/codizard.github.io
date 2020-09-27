@@ -1105,6 +1105,10 @@ body.seo_version .btn-light.ban-btn{
     max-width: 55px;
 }
 
+.seo-services img {
+    max-width: 255px;
+}
+
 .testimonial small {
     margin-top: 7px;
     font-size: 16px;
